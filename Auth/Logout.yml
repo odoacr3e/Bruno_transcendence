@@ -1,0 +1,23 @@
+info:
+  name: Logout
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8080/auth/logout
+  body:
+    type: text
+    data: |-
+      {
+          "title": "Nuova notifica",
+          "description": "Questa e una nuova notifica",
+          "id_receiver": null
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

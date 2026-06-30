@@ -1,0 +1,38 @@
+info:
+  name: Get All Notifications
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/api/notifications
+  params:
+    - name: title
+      value: messaggio
+      type: query
+      disabled: true
+    - name: status
+      value: not_read
+      type: query
+      disabled: true
+    - name: start_date
+      value: 2024-02-07
+      type: query
+      disabled: true
+    - name: end_date
+      value: 2025-12-18
+      type: query
+      disabled: true
+    - name: username
+      value: k
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

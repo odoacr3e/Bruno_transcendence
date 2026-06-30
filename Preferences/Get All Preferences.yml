@@ -1,0 +1,21 @@
+info:
+  name: Get All Preferences
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/api/preferences
+  body:
+    type: text
+    data: |-
+      {
+          "id_friend": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

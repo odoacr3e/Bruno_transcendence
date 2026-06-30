@@ -1,0 +1,7 @@
+info:
+  name: Match History (/api/matchesHistory)
+  type: folder
+  seq: 7
+
+request:
+  auth: inherit

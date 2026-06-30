@@ -1,0 +1,23 @@
+info:
+  name: Send Notification
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/api/notifications
+  body:
+    type: json
+    data: |-
+      {
+          "title": "Nuova notifica di test",
+          "description": "Questa e una nuova notifica di test",
+          "id_receiver": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
