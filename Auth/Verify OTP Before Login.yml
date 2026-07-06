@@ -1,17 +1,19 @@
 info:
-  name: Update User Password
+  name: Verify OTP Before Login
   type: http
-  seq: 6
+  seq: 10
 
 http:
-  method: PATCH
-  url: http://localhost:8080/api/users/updatePassword
+  method: POST
+  url: http://localhost:8080/auth/verifyOtp
   body:
     type: json
     data: |-
       {
-          "password": "Formaggio123%"
+        "id_user": 1,
+        "otp": 414862
       }
+  auth: inherit
 
 settings:
   encodeUrl: true

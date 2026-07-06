@@ -10,12 +10,11 @@ http:
     type: json
     data: |-
       {
-      	"name": "Geronimo",
-      	"surname": "Stilton",
-      	"username": "Investigatopo12",
-      	"email": "g.pippo@gmail.com",
-      	"nationality": "Uganda",
-      	"preferences": 1
+        "name": "Geronimo",
+        "surname": "Stilton",
+        "username": "Investigatopo12",
+        "nationality": "Uganda",
+        "preferences": 1
       }
   auth:
     type: bearer
