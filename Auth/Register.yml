@@ -10,10 +10,10 @@ http:
     type: json
     data: |-
       {
-          "name": "Pippo20",
-          "surname": "Geppino",
-          "username": "UrcaBarurca",
-          "email": "hggh@gmail.com",
+          "name": "Edo",
+          "surname": "Edo",
+          "username": "Test12",
+          "email": "edoraccanello@gmail.com",
           "nationality": "Italiana",
           "password": "Squirtle2026%"
       }
