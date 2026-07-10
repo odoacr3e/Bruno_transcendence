@@ -1,0 +1,15 @@
+info:
+  name: Update Tournament status
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:8080/api/tournaments
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
