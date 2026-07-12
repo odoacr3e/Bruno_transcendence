@@ -1,21 +1,26 @@
 info:
   name: Update User By Id
   type: http
-  seq: 5
+  seq: 7
 
 http:
   method: PATCH
   url: http://localhost:8080/api/users/
   body:
-    type: json
-    data: |-
-      {
-        "name": "Geronimo",
-        "surname": "Stilton",
-        "username": "Investigatopo12",
-        "nationality": "Uganda",
-        "preferences": 1
-      }
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: Geronimo
+      - name: avatar
+        type: file
+        value:
+          - /Users/edo/Documents/Wallpaper/Shoyo_Hinata.jpg
+        contentType: image/jpeg
+      - name: preset
+        type: text
+        value: bastardo
+        disabled: true
   auth:
     type: bearer
     token: "{{jwt}}"
