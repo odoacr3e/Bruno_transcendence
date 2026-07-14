@@ -12,14 +12,19 @@ http:
       - name: name
         type: text
         value: Geronimo
+        disabled: true
       - name: avatar
         type: file
         value:
-          - /Users/edo/Documents/Wallpaper/Shoyo_Hinata.jpg
+          - /Users/edo/Documents/Wallpaper/Bokuto.jpg
         contentType: image/jpeg
       - name: preset
         type: text
         value: bastardo
+        disabled: true
+      - name: mfa
+        type: text
+        value: "false"
         disabled: true
   auth:
     type: bearer

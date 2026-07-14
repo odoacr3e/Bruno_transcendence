@@ -1,17 +1,17 @@
 info:
-  name: Update Tournament status
+  name: Add Players to Tournament
   type: http
-  seq: 6
+  seq: 5
 
 http:
-  method: PATCH
-  url: http://localhost:8080/api/tournaments
+  method: POST
+  url: http://localhost:8080/api/tournaments/addPlayers
   body:
     type: json
     data: |-
       {
-        "id_tournament": 7,
-        "status": "closed"
+        "id_tournament": 1
+        "id_users": []
       }
   auth: inherit
 
